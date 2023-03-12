@@ -1,16 +1,30 @@
-# This is a sample Python script.
+#condicionais
 
-# Press Shift+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
+#if True:
+#    print(2+2)
+
+altura = 180
+idade = 15
+foto = "sim"
+preço = 0
+
+#até 12 anos - 10€
+#acima paga 15€
+# acima de 60 paga 8€
+
+if not altura < 130:
+    print("Pode entrar")
+    if idade > 60 and idade < 80: #quando é and os 2 têm q ser true, quando é or só um deles é q tem q ser true
+        preço = 8
+    elif idade > 12:
+        preço = 10
+    else:
+        preço = 15
+    if foto == "sim":
+        preço += 3
+    print(f"O preço total é {preço}")
+else:
+    print("Não pode entrar")
 
 
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
 
-
-# Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-    print_hi('PyCharm')
-
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
